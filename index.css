@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+  position: relative;
+  overflow-x:hidden ;
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+
+
+.navbar
+{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(218, 255, 255);
+  position:sticky;
+  z-index: 1;
+  top: 0; 
+  box-shadow: 0 0 10px 2px rgb(125, 146, 155);
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 50px; 
+}
+
+.logo{
+  margin-left: 20px;
+  padding: 0;
+  background-image: url(logodrawify-removebg\ \(1\).ico);
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+}
+
+.navbar .item
+{
+  font-size: 20px;
+  background-color: aliceblue;
+  width: auto;
+  border-radius: 4px;
+  border: 1px solid lightslategray; 
+}
+
+.item>a{ text-decoration: none;
+  color: navy;
+  font-weight: 500;
+}
+
+
+.item  a:hover{
+background-color: navy;
+color: aliceblue;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  height: 600px; 
+}
+
+#logoimage{
+  background-image: url(logodrawify-removebg.png);
+  height: 600px;
+  width: 600px;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;  
+  animation: slideFromRight 3s ease forwards; 
+  
+}
+@keyframes slideFromRight {
+  from {
+    transform: translateX(-100%); /* Start position: off-screen left */
+  }
+  to {
+    transform: translateX(10%); /* End position: on-screen */
+  }
+}
+
+
+#heading{
+  animation: slideFromLeft 3s ease forwards; 
+  text-align: center;
+  font-size: 60px;
+  color: navy;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(100%); /* Start position: off-screen left */
+  }
+  to {
+    transform: translateX(10%); /* End position: on-screen */
+  }
+}
+
+.section{
+  background-color: rgb(78, 78, 78);
+  height: 400px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: 0.4fr 0.6fr;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.section .parasection {
+  text-align: center;
+  font-size: 30px ;
+  color: white;
+}
+
+
+#button{
+   margin-left: 130px; 
+  
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  color: #fff;
+  background-color: navy;
+  border: none;
+}
+#button:hover
+ {
+  background-color : rgb(58,58,246);
+}
+
+#button:active {
+  background-color: rgb(58,58,246);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.intro1
+{
+  
+  background-color: rgb(228, 228, 228);
+  height: 200px;
+
+
+}
+.introheading{
+  text-align: center;
+  
+}
+.intropara{
+  font-size: larger;
+  text-align: center;
+
+}
+
+.card{
+  height: 800px;
+}
+
+.cardHeading{
+  text-align: center;
+  color: navy;
+}
+.cardcontainer1{
+  display: flex;
+  height: 250px;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+}
+
+.cardcontainer1 .item{
+  height: 210px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgb(125, 146, 155);
+}
+
+.cardcontainer2{
+  display: flex;
+  height: 250px;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 600;
+}
+
+.cardcontainer2 .item{
+  height: 210px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 0 0 5px 2px rgb(125, 146, 155);
+}
+
+
+.joinContainer{
+  background-color: rgb(78, 78, 78);
+  height: 200px;
+  display: grid;
+  grid-template-rows: 0.4fr 0.6fr;
+}
+.joinContainer .item1{
+  align-self: flex-end;
+}
+.joinContainer .item2{
+align-self: flex-start;
+}
+
+.joinContainer .item{
+  color: white;
+  text-align: center;
+}
+
+.contactContainer{
+  height: 100px;
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgb(228, 228, 228);
+  padding: 40px;
+  
+  
+}
+.contactContainer>h1{
+  text-align: center;
+}
+
+
+ul{
+  list-style-image: url(icons8-linkedin-20.png);
+  margin: 0;
+  padding: 0px;
+}
+
+ .contactContainer li{
+float: left;
+ font-weight: 600;
+ text-decoration: none;
+ font-size: larger;
+ margin-left: 130px;
+ 
+}
+
+
+.contactContainer a{
+  color: maroon;
+  text-decoration: none;
+}
+
+.contactContainer a:hover{
+  color: navy;
+
+}
+
+#footer{
+  height: 50px;
+  padding-top: 25px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin-top: 20;
+  margin-bottom: 0;
+  font-size: larger;
+}
+
+
